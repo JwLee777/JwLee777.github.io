@@ -24,10 +24,10 @@
 <meta property="og:image" content="https://static01.imgkr.com/temp/f20ff891e3f34cc0bfab8f5e0132cc47.jpg">
 <meta property="og:image" content="https://static01.imgkr.com/temp/3261adcc7867438b8c8a3d36f6782baf.jpg">
 <meta property="og:image" content="https://static01.imgkr.com/temp/22a1a02eb8c64deebd9c64b01299462d.jpg">
-<meta property="article:published_time" content="2021-05-15T14:13:26.265Z">
-<meta property="article:modified_time" content="2021-05-15T15:12:28.361Z">
+<meta property="article:published_time" content="2021-05-15T13:07:15.000Z">
+<meta property="article:modified_time" content="2021-05-16T03:25:37.932Z">
 <meta property="article:author" content="JwLee">
-<meta property="article:tag" content="java,python,程序员，生活">
+<meta property="article:tag" content="生活">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://static01.imgkr.com/temp/9313713f670049f28693803a2e6eb016.jpg">
   
@@ -72,7 +72,7 @@
 	        
 				<li><a href="/archives/index.html">归档</a></li>
 	        
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+				<li><a href="/categories">分类</a></li>
 	        
 			</ul>
 		</nav>
@@ -161,7 +161,7 @@
 		        
 					<li style="width: 33.333333333333336%"><a href="/archives/index.html">归档</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 33.333333333333336%"><a href="/categories">分类</a></li>
 		        
 				</ul>
 			</nav>
@@ -199,7 +199,7 @@
           
         
         <a href="/2021/05/15/%E5%A4%AA%E7%99%BD%E5%B1%B1/" class="archive-article-date">
-  	<time datetime="2021-05-15T14:13:26.265Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-15</time>
+  	<time datetime="2021-05-15T13:07:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-05-15</time>
 </a>
         
       </header>
@@ -273,7 +273,29 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/生活//" class="article-tag-list-link color3">生活</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -359,6 +381,19 @@
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%BA%E5%8F%91"><span class="toc-number">1.</span> <span class="toc-text">出发</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BF%9B%E5%B1%B1"><span class="toc-number">2.</span> <span class="toc-text">进山</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%88%AC%E7%88%AC%E7%88%AC"><span class="toc-number">3.</span> <span class="toc-text">爬爬爬</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BD%92%E5%AE%B6"><span class="toc-number">4.</span> <span class="toc-text">归家</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%93%E8%AF%AD"><span class="toc-number">5.</span> <span class="toc-text">结语</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
@@ -373,6 +408,26 @@
   
 
   
+  
+    <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+
+<script>
+var gitalk = new Gitalk({
+  clientID: 'your clientID',
+  clientSecret: 'your clientSecret',
+  repo: 'git_comment',
+  owner: 'findtheonlyway',
+  admin: ['erbiduo'],
+  id: md5(window.location.pathname),
+  distractionFreeMode: true
+})
+
+gitalk.render('gitalk-container')
+</script>
+
 
 
           </div>
@@ -455,6 +510,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">博客</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">生活</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
